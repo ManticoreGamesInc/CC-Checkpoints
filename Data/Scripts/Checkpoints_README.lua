@@ -1,19 +1,13 @@
-<div align="center">
+--[[
 
-# CC-Checkpoints
-
-[![Build Status](https://github.com/ManticoreGamesInc/CC-Checkpoints/workflows/CI/badge.svg)](https://github.com/ManticoreGamesInc/CC-Checkpoints/actions/workflows/ci.yml?query=workflow%3ACI%29)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ManticoreGamesInc/CC-Checkpoints?style=plastic)
-
-![Preview](/Screenshots/Main.png)
-
-</div>
-
-## Finding the Component
-
-This component can be found under the **CoreAcademy** account on Community Content.
-
-## Overview
+   _____ _               _                _       _       
+  / ____| |             | |              (_)     | |      
+ | |    | |__   ___  ___| | ___ __   ___  _ _ __ | |_ ___ 
+ | |    | '_ \ / _ \/ __| |/ / '_ \ / _ \| | '_ \| __/ __|
+ | |____| | | |  __/ (__|   <| |_) | (_) | | | | | |_\__ \
+  \_____|_| |_|\___|\___|_|\_\ .__/ \___/|_|_| |_|\__|___/
+                             | |                          
+                             |_|                          
 
 The Checkpoints component allows players to save spawn locations based on certain actions.
 
@@ -23,7 +17,14 @@ Some action examples could be:
 -Interacting with a trigger
 -Killing the final boss
 
-## Setup
+====
+NOTE
+====
+If the Dependent folders are empty in Project Content under Imported Content for this component, save and reload the project to fix it.
+
+=====
+Setup
+=====
 
 For a full example, drag and drop the Checkpoints Example template into the Hierarchy.
 
@@ -37,9 +38,13 @@ If you want to create the checkpoints from scratch, then drag and drop the Check
 
 The checkpoints are connected using a data table. See below for more information on how to create checkpoints.
 
-## How to use this Template
+==========
+How to use
+==========
 
-### Custom Properties
+=================
+Custom Properties
+=================
 
 The Checkpoints template contains 2 custom properties on the root of the template.
 
@@ -54,7 +59,9 @@ This is useful if you want to prevent older checkpoints in a level from being re
 This will enable Player Storage so the player's last saved checkpoint will be saved for future play sessions.
 Make sure to activate the Enable Player Storage property inside the Game Settings.
 
-### Create Checkpoints
+==================
+Create Checkpoints
+==================
 
 Creating checkpoints is easy. Open the CheckpointsTable data table by finding it in the Project Content or server script properties.
 
@@ -83,7 +90,9 @@ The template needs to be networked. Suggested to use a networked Client Context.
 This is an Asset Reference to a template of effects that will be spawned when the players activates the checkpoint. Leave empty for no effects.
 The template needs to be networked. Suggested to use a networked Client Context.
 
-### Events
+======
+Events
+======
 
 The server script has connected events that can be broadcasted to from other scripts to reset player's checkpoints or activate a checkpoint.
 
@@ -97,3 +106,5 @@ The event needs a player reference and the desired row index of the CheckpointsT
 This will ignore the UsePriority property, so a player's checkpoint can be set to any index.
 
 `Events.Broadcast("ForceSave", playerReference, indexNumber)`
+
+]]--
