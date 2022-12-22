@@ -19,9 +19,9 @@ The Checkpoints component allows players to save spawn locations based on certai
 
 Some action examples could be:
 
--Entering a trigger
--Interacting with a trigger
--Killing the final boss
+- Entering a trigger
+- Interacting with a trigger
+- Killing the final boss
 
 ## Setup
 
