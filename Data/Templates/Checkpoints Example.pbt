@@ -169,7 +169,7 @@ Assets {
         Name: "KillZoneServer"
         Transform {
           Location {
-            Z: -6.10351562e-05
+            Z: -6.10351563e-05
           }
           Rotation {
           }
@@ -941,7 +941,7 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -15.2382812
+            X: -15.2382813
             Y: -7.62939453e-06
             Z: -175
           }
@@ -1062,7 +1062,7 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -15.2382812
+            X: -15.2382813
             Y: -7.62939453e-06
             Z: -175
           }
@@ -1183,7 +1183,7 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -15.2382812
+            X: -15.2382813
             Y: -7.62939453e-06
             Z: -175
           }
@@ -1304,7 +1304,7 @@ Assets {
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -15.2382812
+            X: -15.2382813
             Y: -7.62939453e-06
             Z: -175
           }
@@ -1453,7 +1453,7 @@ Assets {
         Transform {
           Location {
             Y: 5
-            Z: 0.000122070312
+            Z: 0.000122070313
           }
           Rotation {
           }
